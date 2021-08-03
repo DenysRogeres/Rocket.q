@@ -1,0 +1,87 @@
+.content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 11.4rem  1fr;
+
+    grid-template-areas: 
+    'header header'
+    'left right'
+}
+
+header {
+    grid-area: header;
+}
+
+#bg {
+    grid-area: left;
+    background: url('/assets/home-bg-img.svg') no-repeat top/contain;
+}
+
+main {
+    grid-area: right;
+
+    display: flex;
+    align-items: center;
+}
+
+main .container {
+    width: min(36.3rem 100%);
+}
+
+main h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(20px, 5vw, 2.8rem);
+    color: var(--black);
+    margin-bottom: 2.4rem;
+}
+
+input {
+    font-size: 1.6rem;
+    padding: 0 1.6rem;
+    border: 0.2rem solid var(--grey-blue); 
+}
+/* Input and buttons */
+button, input, .button {
+    border-radius: 0.8rem;
+    height: 5rem;
+}
+
+
+button, .button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+
+    transition: filter 0.2s;
+}
+
+button:hover, .button:hover {
+    filter: brightness(1.2);
+}
+
+button > img
+.button > img {
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+button.outlined,
+.button.outlined {
+    background: var(--white);
+    color: var(--blue);
+    border: 0.2rem solid var(--blue);
+}
+
+input, button, .button {
+    width: 100%;
+    margin-bottom: 1.8rem;
+}
+
