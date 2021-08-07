@@ -52,3 +52,23 @@
 #question-form form textarea::placeholder {
     color: var(--grey-blue);
 }
+
+#question-form form footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#question-form form footer > div{
+    color: var(--icon-details);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    display:flex;
+    align-items: center;
+}
+
+#question-form form footer img{
+    margin-right: 0.9rem;
+}
