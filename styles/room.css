@@ -88,22 +88,33 @@
 #question .question-wrapper {
     background-color: var(--light-blue);
     border-radius: 0 0.8rem 0.8rem 0.8rem;
-    height: 13.6rem;
-    /* padding: 2.4rem; */
+    /* height: 13.6rem; */
+    padding: 2.4rem;
+    margin-bottom: 0.8rem;
 }
-
-/* #question .question-wrapper .question-content {
-    /* display: inline-block; */
-    /* justify-content: left;
-
+ #question .question-wrapper .question-content {
+    display: flex;
+    align-items: center;
 } 
 
-#question .question-wrapper .action .delete{
+#question .question-wrapper .question-content p {
+    margin-left: 1.5rem;
+} 
+
+#question .question-wrapper .action {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#question .question-wrapper .action > a {
     display: flex;
     align-items: center;
 }
-#question .question-wrapper .action .check{
-    display: flex;
-    align-items: center;
-    justify-content: initial;
-} */
+
+#question .question-wrapper .action > a > img{
+   margin-right: 0.8rem;
+}
+
+#question .question-wrapper .action > a:nth-child(2) {
+    margin-left: 2.4rem;
+}
