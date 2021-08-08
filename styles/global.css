@@ -80,6 +80,18 @@ button, .button {
     transition: filter 0.2s;
 }
 
+button.red,
+.button red {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+button.grey,
+.button.grey {
+    background-color: var(--grey-light);
+    color: var(--grey-dark);
+}
+
 button:hover, .button:hover {
     filter: brightness(1.2);
 }
