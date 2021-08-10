@@ -1,0 +1,13 @@
+{
+  "name": "Rocket.q",
+  "version": "1.0.0",
+  "description": "Projeto de perguntar anônimas desenvolvido na NLW",
+  "main": "index.js",
+  "repository": "https://github.com/DenysRogeres/Rocket.q.git",
+  "author": "DenysRogeres <dennysrogeres@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
